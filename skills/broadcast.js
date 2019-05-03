@@ -26,8 +26,8 @@ module.exports = function(controller, limiter) {
                 if (moderator) broadcast.exportStorage(bot, message);
             });
         }).catch(function(){
-            controller.logger.error(message.channel + ": /export: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /export: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
     });
 
@@ -39,8 +39,8 @@ module.exports = function(controller, limiter) {
                 if (moderator) broadcast.importStorage(bot, message);
             });
         }).catch(function(){
-            controller.logger.error(message.channel + ": /import: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /import: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
     });
 
@@ -53,8 +53,8 @@ module.exports = function(controller, limiter) {
     			if (moderator) broadcast.publish(bot, message, 0, false);
     		});
         }).catch(function(){
-            controller.logger.error(message.channel + ": /publish: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /publish: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
 
@@ -67,8 +67,8 @@ module.exports = function(controller, limiter) {
                 if (moderator) broadcast.publish(bot, message, 1, false);
             });
         }).catch(function(){
-            controller.logger.error(message.channel + ": /publish: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /publish: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
     });
 
@@ -81,8 +81,8 @@ module.exports = function(controller, limiter) {
                 if (moderator) broadcast.publish(bot, message, 2, false);
             });
         }).catch(function(){
-            controller.logger.error(message.channel + ": /publish: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /publish: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
     });
 
@@ -94,8 +94,8 @@ module.exports = function(controller, limiter) {
     			if (moderator) broadcast.kill(bot, message);
     		});
         }).catch(function(){
-            controller.logger.error(message.channel + ": /kill: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /kill: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
 
@@ -106,8 +106,8 @@ module.exports = function(controller, limiter) {
     		console.log("list command: " + message);
     		broadcast.list(bot, message);
         }).catch(function(){
-            controller.logger.error(message.channel + ": /list: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /list: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
 
@@ -123,8 +123,8 @@ module.exports = function(controller, limiter) {
                 }
     		});
         }).catch(function(){
-            controller.logger.error(message.channel + ": /subscribe: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /subscribe: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
 
@@ -136,8 +136,8 @@ module.exports = function(controller, limiter) {
     			if (moderator) broadcast.unsubscribe(bot, message);
     		});
         }).catch(function(){
-            controller.logger.error(message.channel + ": /unsubscribe: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /unsubscribe: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
 
@@ -147,8 +147,8 @@ module.exports = function(controller, limiter) {
         isPublisher(message, controller.storage).then(function() {
     		broadcast.stats(bot, message);
         }).catch(function(){
-            controller.logger.error(message.channel + ": /stats: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /stats: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
 
@@ -174,8 +174,8 @@ module.exports = function(controller, limiter) {
     			if (moderator) broadcast.loadResponse(bot, message);
     		});
         }).catch(function(){
-            controller.logger.error(message.channel + ": /loadResponses: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /loadResponses: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
 
@@ -188,8 +188,8 @@ module.exports = function(controller, limiter) {
     		    if (moderator) broadcast.publish(bot, message, 1, true);
             });
         }).catch(function(){
-            controller.logger.error(message.channel + ": /test: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /test: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
     
@@ -200,10 +200,10 @@ module.exports = function(controller, limiter) {
             var text = "You can use the following commands:";
             sparkUtils.isMessageFromModerator(message).then(function(moderator) {
                 if (moderator) {
-                    text += "\n\n>`/test <annoucement>` Tests publish logic and displays how the message will appear if published.";
-                    text += "\n\n>`/publish/all <annoucement>` Publish announcements to subscribed users.";
-                    text += "\n\n>`/publish/internal <annoucement>` Publish announcements to subscribed internal users.";
-                    text += "\n\n>`/publish/external <annoucement>` Publish announcements to subscribed external users.";
+                    text += "\n\n>`/test <announcement>` Tests publish logic and displays how the message will appear if published.";
+                    text += "\n\n>`/publish/all <announcement>` Publish announcements to subscribed users.";
+                    text += "\n\n>`/publish/internal <announcement>` Publish announcements to subscribed internal users.";
+                    text += "\n\n>`/publish/external <announcement>` Publish announcements to subscribed external users.";
         		    text += "\n\n>`/kill/<identifier>` Kills ongoing publish and deletes already sent messages.";
             		text += "\n\n>`/subscribe email@domain.com next.email@another.domain` Subscribes the specified users for future announcements.";
                     text += "\n\n>`/subscribe <file_attachment>` Subscribes the specified users from the attached file for future announcements.";
@@ -214,8 +214,8 @@ module.exports = function(controller, limiter) {
                 bot.reply(message, text);
             });
         }).catch(function(){
-            controller.logger.error(message.channel + ": /help: This space is not initalized. If you want my annoucements, message me directly.")
-            bot.reply(message, "This space is not initalized. If you want my annoucements, message me directly.")
+            controller.logger.error(message.channel + ": /help: This space is not initalized. If you want my announcements, message me directly.")
+            bot.reply(message, "This space is not initalized. If you want my announcements, message me directly.")
         });
 	});
 };
